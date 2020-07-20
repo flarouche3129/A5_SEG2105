@@ -2,12 +2,12 @@ package com.larouche.felix.billythemusicbot;
 
 import com.jagrosh.jdautilities.command.CommandClient;
 import com.jagrosh.jdautilities.command.CommandClientBuilder;
-import com.larouche.felix.billythemusicbot.commands.PingCommand;
-import com.larouche.felix.billythemusicbot.commands.PlayCommand;
+import com.larouche.felix.billythemusicbot.commands.*;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
-
 import javax.security.auth.login.LoginException;
+
+
 
 public class Bot {
     private static final String BOT_TOKEN = System.getenv("BOT_TOKEN");
@@ -25,7 +25,10 @@ public class Bot {
         // Add commands
         builder.addCommands(
                 new PingCommand(),
-                new PlayCommand()
+                new PlayCommand(),
+                new PauseCommand(),
+                new StopCommand(),
+                new VolumeCommand()
         );
 
         // Customize per-guild unique settings
