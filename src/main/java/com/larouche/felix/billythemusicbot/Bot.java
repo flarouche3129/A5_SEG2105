@@ -1,5 +1,6 @@
 /**
  * This class creates an instance of a bot using the JDAbuilder.
+ * Copyright 2020 Félix Larouche <flaro058@uottawa.ca>
  */
 
 package com.larouche.felix.billythemusicbot;
@@ -17,7 +18,7 @@ import javax.security.auth.login.LoginException;
 
 
 public class Bot {
-    private static final String BOT_TOKEN = System.getenv("BOT_TOKEN");
+    private static final String BOT_TOKEN = System.getenv("BOT_TOKEN");//INSERT THE BOT TOKEN HERE!
     private static JDA bot;
 
     public static void main(String[] args) {

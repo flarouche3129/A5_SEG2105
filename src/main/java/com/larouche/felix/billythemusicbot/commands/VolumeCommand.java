@@ -1,5 +1,6 @@
 /**
  * This class let's the user change and see the current volume of the song.
+ * Copyright 2020 Félix Larouche <flaro058@uottawa.ca>
  */
 
 package com.larouche.felix.billythemusicbot.commands;

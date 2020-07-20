@@ -1,5 +1,6 @@
 /**
  * This class let's the user cancel everything the bot is doing and make the bot disconnect from the user's channel.
+ * Copyright 2020 Félix Larouche <flaro058@uottawa.ca>
  */
 
 package com.larouche.felix.billythemusicbot.commands;

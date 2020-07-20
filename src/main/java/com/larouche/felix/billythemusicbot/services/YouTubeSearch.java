@@ -1,5 +1,6 @@
 /**
  * This class uses the google API to fetch the song requested by the user as a JSON object, and the parses that said object to find the data required, aka the title, url and duration of the song requested.
+ * Copyright 2020 Félix Larouche <flaro058@uottawa.ca>
  */
 
 

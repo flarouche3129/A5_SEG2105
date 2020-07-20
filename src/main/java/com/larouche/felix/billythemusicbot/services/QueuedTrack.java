@@ -1,5 +1,6 @@
 /**
  * This class is used by the AudioPlayerSendHandler to add tracks to be played.
+ * Copyright 2020 Félix Larouche <flaro058@uottawa.ca>
  */
 
 package com.larouche.felix.billythemusicbot.services;

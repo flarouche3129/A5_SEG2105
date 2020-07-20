@@ -1,5 +1,6 @@
 /**
  * This class let's the user add songs to be played to the bot.
+ * Copyright 2020 Félix Larouche <flaro058@uottawa.ca>
  */
 
 package com.larouche.felix.billythemusicbot.commands;
@@ -41,11 +42,20 @@ public class PlayCommand extends Command {
         //Statement to allow the user to unpause the current song by typing !play again 
         if (commandEvent.getArgs().isEmpty() && commandEvent.getMessage().getAttachments().isEmpty()){
             AudioPlayerSendHandler handler = (AudioPlayerSendHandler)commandEvent.getGuild().getAudioManager().getSendingHandler();
+
+            try{
+                handler.getPlayer();
+            }
+            catch (Exception e){
+                commandEvent.reply("No link provided. Please add a YouTube link or a search you would like to do.");
+                return;
+            }
             if (handler.getPlayer().getPlayingTrack() !=null && handler.getPlayer().isPaused()){
                 handler.getPlayer().setPaused(false);
                 commandEvent.replySuccess("Resumed : " + handler.getPlayer().getPlayingTrack().getInfo().title);
                 return;
             }
+
         }
 
         //creates everything needed to make a song play in the discord

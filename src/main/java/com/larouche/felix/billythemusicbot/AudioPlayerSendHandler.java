@@ -1,5 +1,6 @@
 /**
  * This class handles the song that was requested, downloads it and plays it in the discord channel.
+ * Copyright 2020 Félix Larouche <flaro058@uottawa.ca>
  */
 
 

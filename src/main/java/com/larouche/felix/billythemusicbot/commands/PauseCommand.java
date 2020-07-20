@@ -1,5 +1,6 @@
 /**
  * This class let's the user pause the track currently playing.
+ * Copyright 2020 Félix Larouche <flaro058@uottawa.ca>
  */
 package com.larouche.felix.billythemusicbot.commands;
 import com.jagrosh.jdautilities.command.Command;

@@ -1,5 +1,6 @@
 /**
  * This class let's the user check if the Bot is currently listening for events, and if so the ping with the user and the ping with the websocket.
+ * Copyright 2020 Félix Larouche <flaro058@uottawa.ca>
  */
 
 package com.larouche.felix.billythemusicbot.commands;

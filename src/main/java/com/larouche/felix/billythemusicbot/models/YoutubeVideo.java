@@ -1,5 +1,6 @@
 /**
  * This class creates a YouTubeVideo from the data the YouTubeSearch provides, and makes it more tangible and easy to handle for the other classes.
+ * Copyright 2020 Félix Larouche <flaro058@uottawa.ca>
  */
 
 package com.larouche.felix.billythemusicbot.models;
