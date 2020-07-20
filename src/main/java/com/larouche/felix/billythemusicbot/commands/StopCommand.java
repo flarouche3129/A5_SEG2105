@@ -1,9 +1,16 @@
+/**
+ * This class let's the user cancel everything the bot is doing and make the bot disconnect from the user's channel.
+ */
+
 package com.larouche.felix.billythemusicbot.commands;
 
 import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;
 import com.larouche.felix.billythemusicbot.AudioPlayerSendHandler;
-import net.dv8tion.jda.api.audio.AudioSendHandler;
+
+/**
+ * @author Félix Larouche <flaro058@uottawa.ca>
+ */
 
 public class StopCommand extends Command {
 

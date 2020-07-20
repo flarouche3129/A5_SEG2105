@@ -1,3 +1,7 @@
+/**
+ * This class let's the user check if the Bot is currently listening for events, and if so the ping with the user and the ping with the websocket.
+ */
+
 package com.larouche.felix.billythemusicbot.commands;
 
 import com.jagrosh.jdautilities.command.Command;
@@ -5,11 +9,15 @@ import com.jagrosh.jdautilities.command.CommandEvent;
 
 import java.time.temporal.ChronoUnit;
 
+/**
+ * @author Félix Larouche <flaro058@uottawa.ca>
+ */
+
 public class PingCommand extends Command {
 
     public PingCommand() {
         this.name = "ping";
-        this.help = "Does the ping ping boi uWu";
+        this.help = "Helper method to see if the bot is responding to commands.";
         this.guildOnly = false;
     }
 

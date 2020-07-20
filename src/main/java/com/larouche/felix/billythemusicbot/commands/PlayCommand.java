@@ -1,3 +1,7 @@
+/**
+ * This class let's the user add songs to be played to the bot.
+ */
+
 package com.larouche.felix.billythemusicbot.commands;
 
 import com.jagrosh.jdautilities.command.Command;
@@ -13,6 +17,10 @@ import com.sedmelluq.discord.lavaplayer.track.AudioPlaylist;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import net.dv8tion.jda.api.managers.AudioManager;
 
+/**
+ * @author Félix Larouche <flaro058@uottawa.ca>
+ */
+
 public class PlayCommand extends Command {
 
     public PlayCommand() {
@@ -24,7 +32,7 @@ public class PlayCommand extends Command {
     @Override
     protected void execute(CommandEvent commandEvent) {
 
-
+        //Need to be in a channel to play a song
         if (commandEvent.getMember().getVoiceState().getChannel() == null) {
             commandEvent.reply("Must be in a voice channel when issuing play");
             return;
@@ -40,7 +48,7 @@ public class PlayCommand extends Command {
             }
         }
 
-
+        //creates everything needed to make a song play in the discord
         YoutubeVideo video = YouTubeSearch.search(commandEvent.getArgs());
         commandEvent.reply("Title: " + video.getTitle() + ", Link: https://www.youtube.com/watch?v=" + video.getVideoID());
 

@@ -1,3 +1,8 @@
+/**
+ * This class handles the song that was requested, downloads it and plays it in the discord channel.
+ */
+
+
 package com.larouche.felix.billythemusicbot;
 
 import com.larouche.felix.billythemusicbot.services.QueuedTrack;
@@ -13,6 +18,11 @@ import net.dv8tion.jda.api.managers.AudioManager;
 import java.nio.ByteBuffer;
 import java.util.LinkedList;
 import java.util.List;
+
+/**
+ * @author Félix Larouche <flaro058@uottawa.ca>
+ */
+
 
 public class AudioPlayerSendHandler extends AudioEventAdapter implements AudioSendHandler {
 

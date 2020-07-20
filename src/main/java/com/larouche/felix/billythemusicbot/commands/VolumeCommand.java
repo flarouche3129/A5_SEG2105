@@ -1,9 +1,16 @@
+/**
+ * This class let's the user change and see the current volume of the song.
+ */
+
 package com.larouche.felix.billythemusicbot.commands;
 
 import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;
 import com.larouche.felix.billythemusicbot.AudioPlayerSendHandler;
-import okhttp3.internal.http2.Settings;
+
+/**
+ * @author Félix Larouche <flaro058@uottawa.ca>
+ */
 
 public class VolumeCommand extends Command {
 

@@ -1,8 +1,15 @@
+/**
+ * This class is used by the AudioPlayerSendHandler to add tracks to be played.
+ */
+
 package com.larouche.felix.billythemusicbot.services;
 
 import com.larouche.felix.billythemusicbot.models.Queueable;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 
+/**
+ * @author Félix Larouche <flaro058@uottawa.ca>
+ */
 
 public class QueuedTrack implements Queueable {
     private final AudioTrack track;

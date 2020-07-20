@@ -1,8 +1,14 @@
+/**
+ * This class let's the user pause the track currently playing.
+ */
 package com.larouche.felix.billythemusicbot.commands;
-
 import com.jagrosh.jdautilities.command.Command;
 import com.jagrosh.jdautilities.command.CommandEvent;
 import com.larouche.felix.billythemusicbot.AudioPlayerSendHandler;
+
+/**
+ * @author Félix Larouche <flaro058@uottawa.ca>
+ */
 
 public class PauseCommand extends Command {
 

@@ -1,3 +1,7 @@
+/**
+ * This class creates an instance of a bot using the JDAbuilder.
+ */
+
 package com.larouche.felix.billythemusicbot;
 
 import com.jagrosh.jdautilities.command.CommandClient;
@@ -7,6 +11,9 @@ import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import javax.security.auth.login.LoginException;
 
+/**
+ * @author Félix Larouche <flaro058@uottawa.ca>
+ */
 
 
 public class Bot {
@@ -17,7 +24,7 @@ public class Bot {
 
         CommandClientBuilder builder = new CommandClientBuilder();
 
-        // Set your bot's prefix
+        // Set the bot's prefixes
         builder.setPrefix("!");
         builder.setAlternativePrefix("+");
         builder.setOwnerId("260831732595556354");
@@ -30,9 +37,6 @@ public class Bot {
                 new StopCommand(),
                 new VolumeCommand()
         );
-
-        // Customize per-guild unique settings
-        // builder.setGuildSettingsManager(new MyBotsGuildSettingsManager());
 
         CommandClient commandClient = builder.build();
 

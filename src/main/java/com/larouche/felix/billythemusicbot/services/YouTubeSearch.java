@@ -1,3 +1,8 @@
+/**
+ * This class uses the google API to fetch the song requested by the user as a JSON object, and the parses that said object to find the data required, aka the title, url and duration of the song requested.
+ */
+
+
 package com.larouche.felix.billythemusicbot.services;
 
 import com.larouche.felix.billythemusicbot.models.YoutubeVideo;
@@ -11,6 +16,11 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Scanner;
+
+/**
+ * @author Félix Larouche <flaro058@uottawa.ca>
+ */
+
 
 public class YouTubeSearch {
 
