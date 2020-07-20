@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.larouche.felix.billythemusicbot</OriginalElement>
+  <nodes>
+    <node x="53.40769230769229" y="479.0">com.larouche.felix.billythemusicbot.services.YouTubeSearch</node>
+    <node x="418.9115384615384" y="756.0">com.larouche.felix.billythemusicbot.commands.VolumeCommand</node>
+    <node x="344.58846153846144" y="316.0">com.larouche.felix.billythemusicbot.AudioPlayerSendHandler</node>
+    <node x="925.9115384615384" y="756.0">com.larouche.felix.billythemusicbot.commands.PingCommand</node>
+    <node x="757.9115384615384" y="756.0">com.larouche.felix.billythemusicbot.commands.PauseCommand</node>
+    <node x="574.0" y="860.0">com.larouche.felix.billythemusicbot.Bot</node>
+    <node x="307.24615384615373" y="115.0">com.larouche.felix.billythemusicbot.services.QueuedTrack</node>
+    <node x="357.24615384615373" y="0.0">com.larouche.felix.billythemusicbot.models.Queueable</node>
+    <node x="0.0" y="104.0">com.larouche.felix.billythemusicbot.models.YoutubeVideo</node>
+    <node x="596.9115384615384" y="756.0">com.larouche.felix.billythemusicbot.commands.StopCommand</node>
+    <node x="194.4076923076923" y="756.0">com.larouche.felix.billythemusicbot.commands.PlayCommand</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.larouche.felix.billythemusicbot.commands.PlayCommand" target="com.larouche.felix.billythemusicbot.services.YouTubeSearch">
+      <point x="-27.80000000000001" y="-27.0" />
+      <point x="236.10769230769228" y="726.0" />
+      <point x="153.4076923076923" y="726.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.larouche.felix.billythemusicbot.services.YouTubeSearch" target="com.larouche.felix.billythemusicbot.models.YoutubeVideo">
+      <point x="-50.0" y="-27.0" />
+      <point x="103.40769230769229" y="291.0" />
+      <point x="120.0" y="291.0" />
+      <point x="0.0" y="81.0" />
+    </edge>
+    <edge source="com.larouche.felix.billythemusicbot.AudioPlayerSendHandler" target="com.larouche.felix.billythemusicbot.services.QueuedTrack">
+      <point x="0.0" y="-190.0" />
+      <point x="548.0884615384614" y="291.0" />
+      <point x="472.24615384615373" y="291.0" />
+      <point x="55.0" y="70.0" />
+    </edge>
+    <edge source="com.larouche.felix.billythemusicbot.commands.PlayCommand" target="com.larouche.felix.billythemusicbot.services.QueuedTrack">
+      <point x="0.0" y="-27.0" />
+      <point x="263.9076923076923" y="716.0" />
+      <point x="287.75" y="716.0" />
+      <point x="287.75" y="291.0" />
+      <point x="362.24615384615373" y="291.0" />
+      <point x="-55.0" y="70.0" />
+    </edge>
+    <edge source="com.larouche.felix.billythemusicbot.Bot" target="com.larouche.felix.billythemusicbot.commands.PingCommand">
+      <point x="59.60000000000002" y="-27.0" />
+      <point x="708.1" y="840.0" />
+      <point x="996.4115384615384" y="840.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.larouche.felix.billythemusicbot.commands.PauseCommand" target="com.larouche.felix.billythemusicbot.AudioPlayerSendHandler">
+      <point x="0.0" y="-27.0" />
+      <point x="831.9115384615384" y="736.0" />
+      <point x="710.8884615384613" y="736.0" />
+      <point x="162.79999999999995" y="190.0" />
+    </edge>
+    <edge source="com.larouche.felix.billythemusicbot.Bot" target="com.larouche.felix.billythemusicbot.commands.PlayCommand">
+      <point x="-59.60000000000002" y="-27.0" />
+      <point x="588.9" y="840.0" />
+      <point x="263.9076923076923" y="840.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.larouche.felix.billythemusicbot.commands.VolumeCommand" target="com.larouche.felix.billythemusicbot.AudioPlayerSendHandler">
+      <point x="0.0" y="-27.0" />
+      <point x="497.9115384615384" y="736.0" />
+      <point x="548.0884615384614" y="736.0" />
+      <point x="0.0" y="190.0" />
+    </edge>
+    <edge source="com.larouche.felix.billythemusicbot.Bot" target="com.larouche.felix.billythemusicbot.commands.VolumeCommand">
+      <point x="-29.799999999999955" y="-27.0" />
+      <point x="618.7" y="830.0" />
+      <point x="497.9115384615384" y="830.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.larouche.felix.billythemusicbot.services.QueuedTrack" target="com.larouche.felix.billythemusicbot.models.Queueable">
+      <point x="0.0" y="-70.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.larouche.felix.billythemusicbot.commands.PlayCommand" target="com.larouche.felix.billythemusicbot.AudioPlayerSendHandler">
+      <point x="55.60000000000002" y="-27.0" />
+      <point x="319.5076923076923" y="736.0" />
+      <point x="466.68846153846147" y="736.0" />
+      <point x="-81.39999999999998" y="190.0" />
+    </edge>
+    <edge source="com.larouche.felix.billythemusicbot.commands.PlayCommand" target="com.larouche.felix.billythemusicbot.models.YoutubeVideo">
+      <point x="-55.599999999999994" y="-27.0" />
+      <point x="208.3076923076923" y="736.0" />
+      <point x="42.90769230769229" y="736.0" />
+      <point x="42.90769230769229" y="291.0" />
+      <point x="40.0" y="291.0" />
+      <point x="-80.0" y="81.0" />
+    </edge>
+    <edge source="com.larouche.felix.billythemusicbot.Bot" target="com.larouche.felix.billythemusicbot.commands.PauseCommand">
+      <point x="29.799999999999955" y="-27.0" />
+      <point x="678.3" y="830.0" />
+      <point x="831.9115384615384" y="830.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.larouche.felix.billythemusicbot.Bot" target="com.larouche.felix.billythemusicbot.commands.StopCommand">
+      <point x="0.0" y="-27.0" />
+      <point x="648.5" y="840.0" />
+      <point x="667.4115384615384" y="840.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="com.larouche.felix.billythemusicbot.commands.StopCommand" target="com.larouche.felix.billythemusicbot.AudioPlayerSendHandler">
+      <point x="0.0" y="-27.0" />
+      <point x="667.4115384615384" y="736.0" />
+      <point x="629.4884615384615" y="736.0" />
+      <point x="81.39999999999998" y="190.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9" x="385.49999999999994" y="478.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>packageLocal</VISIBILITY>
+</Diagram>
+
